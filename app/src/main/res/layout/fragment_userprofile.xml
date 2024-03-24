@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".userprofile"
     android:orientation="vertical">
 
@@ -14,24 +14,24 @@
         android:background="#DFA1EA">
 
 
-        <TextView
-            android:text="nabeeha.exe"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            android:gravity="center">
+<!--        <TextView-->
+<!--            android:text="nabeeha.exe"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:gravity="center">-->
 
-        </TextView>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/apps"
-            >
+<!--        </TextView>-->
+<!--        <ImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/apps"-->
+<!--            >-->
 
-        </ImageButton>
+<!--        </ImageButton>-->
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@
 
             </ImageView>
             <Space
-                android:layout_width="20dp"
+                android:layout_width="13dp"
                 android:layout_height="10dp">
 
             </Space>
@@ -61,7 +61,7 @@
 
 
             <LinearLayout
-                android:layout_width="330dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="12dp"
@@ -132,11 +132,11 @@
             </LinearLayout>
 
                 <Button
-                    android:layout_width="280dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/editprofile_btn"
-                    android:backgroundTint="#774545"
-                    android:text="Edit Profile">
+                    android:layout_width="270dp"
+                    android:layout_height="38dp"
+
+                    android:backgroundTint="#AE6ABA"
+                    android:text="@string/edit_profile">
 
                 </Button>
             </LinearLayout>
@@ -184,39 +184,56 @@
         </LinearLayout>
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="35dp">
+            android:layout_height="20dp">
 
         </Space>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E1DCDC">
+
+        </View>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             >
+
             <ImageButton
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:src="@drawable/apps">
+                android:backgroundTint="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/apps"
+
+                >
 
             </ImageButton>
             <ImageButton
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:src="@drawable/call">
+                android:src="@drawable/list1"
+                android:scaleType="centerInside"
+                android:backgroundTint="@color/white">
 
             </ImageButton>
             <ImageButton
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:src="@drawable/heart">
+                android:scaleType="centerInside"
+                android:src="@drawable/location1"
+                android:backgroundTint="@color/white">
 
             </ImageButton>
             <ImageButton
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:src="@drawable/person">
+                android:src="@drawable/person"
+                android:backgroundTint="@color/white">
 
             </ImageButton>
         </LinearLayout>
@@ -224,7 +241,7 @@
             android:layout_width="match_parent"
             android:layout_height="165dp">
             <ImageView
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -232,7 +249,7 @@
 
             </ImageView>
             <ImageView
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -240,7 +257,7 @@
 
             </ImageView>
             <ImageView
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -253,7 +270,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -262,7 +279,7 @@
             </ImageView>
 
             <ImageView
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -270,7 +287,7 @@
 
             </ImageView>
             <ImageView
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -279,54 +296,75 @@
             </ImageView>
         </LinearLayout>
     </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:background="">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></Space>
 
-    <ImageButton
-        android:layout_width="0"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/call">
+    <Space
+        android:layout_height="20dp"
+        android:layout_width="match_parent">
 
-    </ImageButton>
-    <ImageButton
-        android:layout_width="0"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/call">
+    </Space>
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="#E1DDDD"
+        >
 
-    </ImageButton>
-    <ImageButton
-        android:layout_width="0"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
 
-        android:src="@drawable/call">
+        >
 
-    </ImageButton>
-    <ImageButton
-        android:layout_width="0"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/call">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/home"
 
-    </ImageButton>
-    <ImageButton
-        android:layout_width="0"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/call">
+            >
 
-    </ImageButton>
-    <ImageButton
-        android:layout_width="0"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/call">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/camera"
+            android:scaleType="centerInside"
+            android:backgroundTint="@color/white">
 
-    </ImageButton>
-</LinearLayout>
+        </ImageButton>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/loupe"
+            android:backgroundTint="@color/white">
+
+        </ImageButton>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/like"
+            android:backgroundTint="@color/white">
+
+        </ImageButton>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/prof"
+            android:backgroundTint="@color/white">
+
+        </ImageButton>
+
+    </LinearLayout>
 </LinearLayout>
