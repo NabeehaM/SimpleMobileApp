@@ -1,18 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="40dp"
+    android:background="@drawable/mygradient">
 
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_80dp"
+            android:src="@drawable/chat"
+            android:gravity="center">
+
+        </ImageView>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/euphoria_script"
+                android:text="@string/chatify"
+                android:textSize="60dp"
+                />
+
+    </LinearLayout>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/_12dp"
+                android:id="@+id/firstname"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="12dp"
+                android:id="@+id/lastname"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="12dp"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="12dp"
+                android:id="@+id/password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Retype password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="12dp"
+                android:id="@+id/confirmpassword"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        >
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="16sp"/>
+        <Space
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="16sp"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:text="@string/signup"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/signupbtn"
+
+            >
+
+        </Button>
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/exit"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/exitbtn"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="80dp"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/already_have_an_account"
+        android:layout_gravity="center"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_now"
+        android:textStyle="bold"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:autoLink="web"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:onClick="openLoginActivity"/>
+    </LinearLayout>
+</LinearLayout>

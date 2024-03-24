@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#AE6ABA"
+        android:gravity="center"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AE6ABA"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:paddingLeft="10dp"/>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gui_demo_20l_1080"
+
+            android:textSize="19dp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:paddingTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:onClick="selectTab"
+                android:tag="One"
+                android:id="@+id/tabOneLayout">                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="12dp"
+                    android:width="10dp"
+
+                    >
+
+                </ImageView>
+                <Space
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one"
+                    android:paddingTop="12dp"
+                    android:layout_weight="1"
+
+                    android:textSize="19dp"
+                    ></TextView>
+            </LinearLayout>
+            <View
+                android:id="@+id/tabOneIndicator"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:background="#E4C2E7"
+                android:visibility="invisible"
+                 />
+        </LinearLayout>
+<!-- hi -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:onClick="selectTab"
+                android:tag="Two"
+                android:id="@+id/tabTwoLayout">                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="12dp"
+                    android:width="10dp"
+
+                    >
+
+                </ImageView>
+                <Space
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two"
+                    android:paddingTop="12dp"
+                    android:layout_weight="1"
+
+                    android:textSize="19dp"
+                    ></TextView>
+            </LinearLayout>
+            <View
+                android:id="@+id/tabTwoIndicator"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:background="#E4C2E7"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:onClick="selectTab"
+                android:tag="Three"
+                android:id="@+id/tabThreeLayout">                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="12dp"
+                    android:width="10dp"
+
+                    >
+
+                </ImageView>
+                <Space
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:paddingTop="12dp"
+                    android:layout_weight="1"
+
+                    android:textSize="19dp"
+                    ></TextView>
+            </LinearLayout>
+            <View
+                android:id="@+id/tabThreeIndicator"
+                android:layout_width="110dp"
+                android:layout_height="4dp"
+                android:background="#E4C2E7"
+                android:visibility="invisible"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <fragment
+
+            android:name="com.example.simpleapp.userprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prof_frag"
+            tools:layout="@layout/fragment_userprofile"
+            />
+
+
+        <fragment
+
+            android:name="com.example.simpleapp.BlankFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blank_frag"
+            tools:layout="@layout/fragment_blank"
+            />
+</LinearLayout>
+
+</LinearLayout>
